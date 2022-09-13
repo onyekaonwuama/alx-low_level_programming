@@ -9,7 +9,7 @@ int main(void)
 char small = 'a';
 while (small <= 'z')
 {
-if (small != 'e' && z != 'q')
+if (small != 'e' && small != 'q')
 putchar(small);
 small++;
 }
