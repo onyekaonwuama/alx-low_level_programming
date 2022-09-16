@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.c"
 /**
  *times_table - entry point
  *@void: is void
