@@ -19,12 +19,12 @@ void print_triangle(int size)
 			for  (gap = (size - 1); gap >= 0; gap--)
 			{
 				if (gap <= row)
-					_putchar('#')
+					_putchar('#');
 				else
-					_putchar(' ')
+					_putchar(' ');
 			}
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
 
