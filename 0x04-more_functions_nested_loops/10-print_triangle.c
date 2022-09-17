@@ -21,7 +21,7 @@ void print_triangle(int size)
 				if (gap <= row)
 					_putchar('#')
 				else
-					_putchar('')
+					_putchar(' ')
 			}
 		}
 		_putchar('\n')
