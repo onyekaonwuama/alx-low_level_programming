@@ -10,7 +10,7 @@ int main(void)
 	long int ans = prime;
 	long int div = 2;
 
-	while (ans = div)
+	while (ans != div)
 	{
 		if (ans % div == 0)
 		{
