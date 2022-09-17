@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
  *print_line - prints a line of _ n long
- *@n: line length
- *
+ *@n: int line length
  *Return: void
  */
 
@@ -10,7 +9,7 @@ void print_line(int n)
 {
 	int line = 0;
 
-	while (lie < n)
+	while (line < n)
 	{
 		_putchar('_');
 		line++;
