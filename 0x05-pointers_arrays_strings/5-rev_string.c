@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_rev - reverses a string
+ * rev_string - reverses a string
  * @s: char
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int a, len;
 
