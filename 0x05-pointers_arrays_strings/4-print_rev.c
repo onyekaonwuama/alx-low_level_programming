@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *print_rev - print in reverse a str
 *@s:takes a string
@@ -11,6 +12,6 @@ while (s[b] != '\0')
 b++;
 b--;
 for (a = b; a >= 0; a--)
-putchar(s[a]);
-putchar('\n');
+_putchar(s[a]);
+_putchar('\n');
 }
