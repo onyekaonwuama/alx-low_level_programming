@@ -4,19 +4,18 @@
  *_strcat - concats two strings
  *@dest: The destination value
  *@src: source value
- *@n:Limit of the concatenation
  *Return: A pointer to the resulting string of dest
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	int len = 0, dest_len = 0;
+	int len = 0, c;
 
-	while (dest[i++])
-		dest_len++;
+	while (dest[len] != '\0')
+		len++;
 
-	for (i = 0; src[i]; i++)
-		dest[dest_len++] = src[i];
+	for (c = 0; src[c] != '\0'; c++, len++)
+		dest[len] = src[c];
 
 	return (dest);
 }
