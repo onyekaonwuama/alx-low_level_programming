@@ -1,30 +1,40 @@
-#include "holberton.h"
+#include "main.h"
 /**
- *is_prime_number - if a prime number
- *@n: integer
- *Return: value
+ * prime_found - found prime number
+ * @i: dividend int
+ * @j: divisor int
  *
+ * Return: return 1 if the input int is prime number, else 0
+ */
+int prime_found(int i, int j)
+{
+	if (j != 1)
+	{
+		if (i == j)
+		{
+			return (1);
+		}
+		else if (j % i == 0 || j <= 1)
+		{
+			return (0);
+		}
+		else
+		{
+			return (prime_found(i + 1, j));
+		}
+	}
+	return (0);
+}
+/**
+ * is_prime_number - shows if is a prime number
+ * @n: number
  *
+ * Return: the input integer if its a prime number
  */
 int is_prime_number(int n)
 {
-	if (n < 0 || n == 1)
-		return (0);
-	return (prime2(2, n));
-}
+	int a = 2;
 
-/**
- *prime2 - find prime number
- *@x: int
- *@y: int
- *Return: value
- */
-int prime2(int x, int y)
-{
-	if (y == x)
-		return (1);
-	else if (y % x == 0)
-		return (0);
-	return (prime2(x + 1, y));
+	return (prime_found(a, n));
 }
 
