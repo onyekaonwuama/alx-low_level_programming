@@ -1,26 +1,33 @@
 #include "main.h"
 /**
- *_sqrt_recursion - square root
- *@n: int
- *Return: sqaured val
+ * square_root - find square root
+ * @i: num
+ * @j: increment
+ *
+ * Return: square rrot val
+ */
+int square_root(int i, int j)
+{
+	if (i * i == j)
+		return (i);
+	else if (i * i > j)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (square_root(i + 1, j));
+	}
+}
+/**
+ * _sqrt_recursion - returns square root of a number
+ * @n: num
+ * Return: square root
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt2(1, n));
-}
-/**
- *_sqrt2 - find square
- *@a: int
- *@b: int
- *Return: sqaured val
- */
-int _sqrt2(int a, int b)
-{
-	if (a * a > b)
-		return (-1);
-	else if (a * a == b)
-		return (a);
-	else
-		return (_sqrt2(a += 1, b));
+	int a = 1;
+
+	return (square_root(a, n));
 }
 
