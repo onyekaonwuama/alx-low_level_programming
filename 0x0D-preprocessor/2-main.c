@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the file name
+ * main - Entry point
  *
  * return - 0 as sucess
  */
