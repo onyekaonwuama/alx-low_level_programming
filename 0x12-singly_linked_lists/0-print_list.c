@@ -3,15 +3,9 @@
 
 
 /**
-
  * print_list - prints all the elements of a linked list
-
  * @h: head of the list
-
- *
-
  * Return: the number of nodes
-
  */
 
 size_t print_list(const list_t *h)
