@@ -4,20 +4,24 @@
  *free_list - Frees a list
  *@head: A pointer to the list head
  *
+ *Return: void
  */
 
 void free_list(list_t *head)
 {
-	list_t *temp;
+	list_t *temp, *temp2;
 
-	while (head)
+	temp = head;
+
+	while (temp != NULL)
 	{
-		temp = head->next;
+		temp2 = temp->next;
 
-		free(head->str);
+		free(temp->str);
 
-		free(head);
+		free(temp);
 
-		head = temp;
+		temp = temp2;
 	}
 }
+
