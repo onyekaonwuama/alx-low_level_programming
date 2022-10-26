@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_listint - Prints lements of a singly linked list.
+ * print_listint - Prints elements of a singly linked list.
  *
  * @h: Pointer to a list.
  *
