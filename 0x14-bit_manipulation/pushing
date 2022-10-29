@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#to add commit and push
+
+clear
+read -p "To start press Enter."
+
+git add .
+
+echo -e "enter git commit name: "
+
+read name
+
+git commit -m "$name"
+
+git push
+
