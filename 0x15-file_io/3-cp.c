@@ -2,13 +2,10 @@
 #include <stdio.h>
 
 /**
- * error_file - checks if files can be opened.
- * @file_from: file_from.
- * @file_to: file_to.
+ * main - copies contents of one file to other file
  * @ac: number of arguments
  * @av: argument vector
- * @argv: arguments vector.
- * Return: no return.
+ * Return: 0 for success
  */
 int main(int ac, char **av)
 {
